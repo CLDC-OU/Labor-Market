@@ -1,0 +1,7 @@
+datetime
+numpy
+openpyxl
+pandas
+pdfminer.six
+python-dotenv
+xlrd

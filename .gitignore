@@ -1,0 +1,11 @@
+.venv
+__pycache__
+
+Inputs/*.xlsx
+Inputs/*.csv
+
+Outputs
+
+ONET/.env
+
+config.json
