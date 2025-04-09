@@ -1,8 +1,8 @@
 .venv
 __pycache__
 
-Inputs
-Outputs
+Inputs/
+Outputs/
 
 ONET/.env
 
