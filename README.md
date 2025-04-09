@@ -5,9 +5,7 @@ tabular data breaking down all of the professions associated with university deg
 and growth projections.
 
 Used at the CLDC to Create a Yearly Labor Market Dashboard.
-
-[![Watch the video](demo.mp4)](https://github.com/brandonowens24/Labor-Market/blob/main/demo.mp4)
-
+<video controls src="demo.mp4" title="Demo"></video>
 ***
 
 > [!WARNING]
