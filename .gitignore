@@ -9,3 +9,5 @@ Outputs
 ONET/.env
 
 config.json
+
+.DS_Store

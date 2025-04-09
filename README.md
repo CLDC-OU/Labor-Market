@@ -20,8 +20,9 @@ Used at the CLDC to Create a Yearly Labor Market Dashboard.
 ## Setup
 1. Clone this repository.
 2. Ensure all [dependencies](#dependencies) are configured and running properly
-3. [Update and Configure](#configuring-files)
-4. Run 
+3. Establish Env Variables in `ONET/`
+4. [Update and Configure](#configuring-files)
+5. Run 
 ```{jupyter}
 jupyter nbconvert --to notebook --inplace --execute match_codes.ipynb
 ```
