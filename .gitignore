@@ -1,9 +1,7 @@
 .venv
 __pycache__
 
-Inputs/*.xlsx
-Inputs/*.csv
-
+Inputs
 Outputs
 
 ONET/.env
