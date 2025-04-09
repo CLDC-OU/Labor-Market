@@ -6,7 +6,7 @@ and growth projections.
 
 Used at the CLDC to Create a Yearly Labor Market Dashboard.
 
-[![Watch the video](demo.mp4)]()
+[![Watch the video](demo.mp4)](https://github.com/brandonowens24/Labor-Market/blob/main/demo.mp4)
 
 ***
 
