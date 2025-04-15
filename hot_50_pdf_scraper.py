@@ -103,4 +103,4 @@ if __name__ == '__main__':
     })
 
     output_file = args.create if args.create.endswith('.csv') else args.create + ".csv"
-    df.to_csv("Outputs\\" + output_file)
+    df.to_csv(output_file)
