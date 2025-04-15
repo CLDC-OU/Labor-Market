@@ -47,6 +47,6 @@ pip install -r requirements.txt
 > * HOT_50_INPUT: The Michigan Center for Data and Analytics Hot Jobs Report. [Link](https://www.michigan.gov/mcda/reports/michigan-hot-50)
 
 > [!IMPORTANT]
-> Ensure that file paths are configured properly in `config.json`.
+> Ensure that file paths are configured properly in a `config.json` file. Example of this file structure can be found [here](https://github.com/CLDC-OU/Labor-Market/blob/main/example.config.json).
 
 
