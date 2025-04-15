@@ -1,4 +1,5 @@
-import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error
+import argparse
 import base64
 import json
 import sys
@@ -7,7 +8,8 @@ from dotenv import load_dotenv
 
 class ONET_report:
   def __init__(self, codes): 
-     self.codes = codes if codes is not None else sys.stdin.read().split("\n")
+        if codes is not None:
+            self.codes = codes
 
   def call(self):
     '''
@@ -19,8 +21,11 @@ class ONET_report:
     Creates:
         - json file with SOC code as key.
     '''
+    for key in list(os.environ.keys()):
+        if key.startswith("USERNAME") or key.startswith("PASSWORD"):  # You can specify other keys to clear if needed
+            del os.environ[key]
 
-    load_dotenv()
+    load_dotenv(dotenv_path="ONET/.env")
     USERNAME = os.getenv('USERNAME')
     PASSWORD = os.getenv('PASSWORD')
 
@@ -85,5 +90,12 @@ class OnetWebService:
                      'urllib2_info': handle }
         return json.load(handle)
 
-codes = sys.stdin.read().split("\n")
-ONET_report(codes).call()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--input", help="Path to input SOC codes text file", required=True)
+    args = parser.parse_args()
+
+    with open(args.input, "r") as f:
+        codes = [line.strip() for line in f if line.strip()]
+
+    ONET_report(codes).call()
