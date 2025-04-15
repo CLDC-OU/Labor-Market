@@ -18,13 +18,13 @@ Used at the CLDC to Create a Yearly Labor Market Dashboard.
 ## Setup
 1. Clone this repository.
 2. Ensure all [dependencies](#dependencies) are configured and running properly
-3. Establish Env Variables in `ONET/`
+3. Establish Env Variables in `ONET/`. See [ONET README](https://github.com/CLDC-OU/Labor-Market/blob/main/ONET/README.md) for further instructions.
 4. [Update and Configure](#configuring-files)
 5. Run 
 ```{jupyter}
 jupyter nbconvert --to notebook --inplace --execute match_codes.ipynb
 ```
-5. (Optional) Replace connections/files in the OneDrive to update the Labor Market Dashboard annually.
+6. (Optional) Replace connections/files in the OneDrive to update the Labor Market Dashboard annually.
 
 ## Features
 - [x] Scrapes Hot 50 Michigan Jobs Report 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 > [!IMPORTANT]
 > These Files Should Exist and Be Updated Annually: 
 > * CIP_TO_SOC_CROSSWALK: File from NCES that gives CIP to SOC conversion. [Link](https://nces.ed.gov/ipeds/cipcode/post3.aspx?y=56)
-> * MAJORS: File from OU that lists all majors and associated CIP codes at Oakland University
+> * MAJORS: File from OU that lists all majors and associated CIP codes at Oakland University (Processed and saved in Careers Google Drive)
 > * LIGHTCAST_OCCUPATION_REPORT: Occupation Table report from Lightcast (**SET YEARS TO INCLUDE NEXT SUBSET IN SPAN -- EX: if 2023-2033 change to 2024-2034). [Link](https://analyst.lightcast.io/analyst/?t=4ntrw#h=QDCXTPV.5CE7KuiyBpH9GyNG_J&page=occupation_table&vertical=standard&nation=us)
 > * MISMATCHED_LIGHTCAST_CODES: Custom text file that includes conversions of codes that are incorrectly listed on Lightcast.
 > * HOT_50_INPUT: The Michigan Center for Data and Analytics Hot Jobs Report. [Link](https://www.michigan.gov/mcda/reports/michigan-hot-50)

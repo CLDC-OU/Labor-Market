@@ -3,16 +3,18 @@
 This ONET_report utilizes access to the BLS API in an easy-to-access format.
 
 ## Table of Contents
+1. [Configure](#configuring-the-environment)
 1. [Example Usage](#example-usage)
 2. [Returns](#returns)
 
+## Configuring the Environment
+> [!IMPORTANT]
+> Must create a login with environment variables to ONET.
+> Stored in `.env`, an example of this format has been provided.
+
 ## Example Usage
-
 ```shell{example}
-from ONET_API import ONET_report
-
-codes = sys.stdin.read().split("\n")
-ONET_report(codes).call()
+!python ONET_API.py -i {Input Text File} > ONET.json
 ```
 
 ## Returns
@@ -715,29 +717,6 @@ ONET_report(codes).call()
     }
   }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
