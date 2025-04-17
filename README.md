@@ -20,10 +20,7 @@ Used at the CLDC to Create a Yearly Labor Market Dashboard.
 2. Ensure all [dependencies](#dependencies) are configured and running properly
 3. Establish Env Variables in `ONET/`. See [ONET README](https://github.com/CLDC-OU/Labor-Market/blob/main/ONET/README.md) for further instructions.
 4. [Update and Configure](#configuring-files)
-5. Run 
-```{jupyter}
-jupyter nbconvert --to notebook --inplace --execute match_codes.ipynb
-```
+5. Run the notebook!
 6. (Optional) Replace connections/files in the OneDrive to update the Labor Market Dashboard annually.
 
 ## Features
