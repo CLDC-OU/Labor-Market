@@ -14,8 +14,12 @@ This ONET_report utilizes access to the BLS API in an easy-to-access format.
 
 ## Example Usage
 ```shell{example}
-!python ONET_API.py -i {Input Text File} > ONET.json
+!python ONET_API.py -i  <Input Text File>  > ONET.json
 ```
+  Where
+    * `<Input Text File>` is the path to your text file containing desired SOC Codes.
+    * `ONET.json` is the document that will be created, storing json information from ONET API.
+
 
 ## Returns
 * A json string containing job information for every SOC Code given with format:
@@ -717,44 +721,3 @@ This ONET_report utilizes access to the BLS API in an easy-to-access format.
     }
   }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The following is a set of instructions to utilize custom calls to the BLS API and output them as a json file of your choice.
-
-## Usage
-Please follow the instructions to make calls and deliver outputs for the ONET API:
-
-1. Create a .txt file containing desired SOC codes:
-    ```{python}
-    # EX [Code Input.txt]:
-    00-0001
-    00-0002
-    00-0003
-    ```
-
-2. Run the following from the command line:
-    ```{CLI} 
-    python [Path to SOC Codes Input.txt] < [Path to]ONET_API.py > [Path to Desired Output.json]
-    ```
-    Where
-    * `[Path to SOC Codes Input.txt]` is the path to your text file containing desired SOC Codes.
-    * `[Path to Desired Output.json]` is the path to and the name of your desired json return file.
